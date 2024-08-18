@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+       img{
+        animation: move 10s linear infinite;
+        position: absolute;
+       }
+       @keyframes move {
+        0%, 100%{
+            left: 100%;
+            transform: translateX(-100%);
+            height: 240px;
+            width: 360px;
+        }
+        25%{
+            height: 180px;
+            width: 270px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        50%{
+            left: 0%;
+            transform: translateX(-20%);
+            height: 240px;
+            width: 360px;
+        }
+        75%{
+            height: 340px;
+            width: 510px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+       }
+    </style>
+</head>
+<body>
+ <img src="EArth.gif" alt="">
+</body>
+</html>
